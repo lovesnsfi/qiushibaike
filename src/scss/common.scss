@@ -1,0 +1,13 @@
+$primaryColor:#FFD52B;
+$primaryWidth:960px;
+@mixin flexbox($dir:row) {
+    display: flex;
+    flex-direction: $dir;
+    justify-content: center;
+    @content;
+}
+
+.container {
+    width: 960px;
+    overflow-x: hidden;
+}
